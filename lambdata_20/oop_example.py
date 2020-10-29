@@ -1,11 +1,10 @@
 """OOP examples for module 2"""
-import pandas as pd 
 
 
-class MyDataFrame(pd.DataFrame):
-  """Inheriting from Pandas DataFrame Class proof of concept"""
-  def num_cells(self):
-    return self.shape[0] * self.shape[1] # returns number of cells in df
+# class MyDataFrame(pd.DataFrame):
+#   """Inheriting from Pandas DataFrame Class proof of concept"""
+#   def num_cells(self):
+#     return self.shape[0] * self.shape[1] # returns number of cells in df
 
 
 class BareMinimumClass:
@@ -23,6 +22,9 @@ class Complex:
     self.i = imagpart 
 
   def add(self, other_complex):
+    """ 
+    Adds things to complex numbers
+    """
     self.r += other_complex.r 
     self.i += other_complex.i
 
